@@ -55,5 +55,6 @@ public class IntegerListTest
         System.out.println("1: Create a new list (** do this first!! **)");
         System.out.println("2: Print the list");
         System.out.print("\nEnter your choice: ");
+        int choice= scan.nextInt();
     }
 }
