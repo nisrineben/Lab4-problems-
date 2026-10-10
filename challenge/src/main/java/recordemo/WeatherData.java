@@ -16,6 +16,12 @@ public record WeatherData(double temperatureCelsius, String conditions) {
         return new WeatherData((tempFahrenheit-32)*5/9,conditions);
 
     }
+    public static void main(String[] args) {
+        WeatherData todayWeather=new WeatherData(25,"Sunny");
+        WeatherData yesterdayWeather=WeatherData.fromFahrenheit(50,"Sunny");
+        System.out.println("Today's weather:"+todayWeather.getSummary());
+        System.out.println("Yesterday's weather:"+yesterdayWeather.getSummary());
+    }
 
 
 }
